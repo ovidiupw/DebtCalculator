@@ -9,6 +9,8 @@
     "@types/chai": "^4.1.4",
     "@types/mocha": "^5.2.2",
     "@types/node": "^10.3.3",
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0",
     "nodemon": "^1.17.5",
     "ts-node": "^6.1.1",
     "typescript": "^2.9.2"
@@ -16,6 +18,9 @@
   "scripts": {
     "start": "npm run build:hotreload",
     "build:hotreload": "nodemon --exec ./node_modules/.bin/ts-node -- src/debt-calculator.ts",
-    "test": "mocha -r ts-node/register tst/**/* test.ts"
+    "test": "mocha -r ts-node/register tst/**/*.test.ts"
+  },
+  "dependencies": {
+    "winston": "^3.0.0"
   }
 }

@@ -1,6 +1,8 @@
+import logger from './lib/log/logger';
+
 class DebtCalculator {
   constructor(message: string) {
-    console.log(message);
+    logger.info(message);
   }
 }
 
