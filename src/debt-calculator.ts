@@ -4,4 +4,4 @@ class DebtCalculator {
   }
 }
 
-new DebtCalculator("Hello World!");
+export default DebtCalculator;
