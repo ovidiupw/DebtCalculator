@@ -1,0 +1,8 @@
+{
+  "InputFileFormat": "csv",
+  "InputMappings": [{
+    "FieldName": "amount",
+    "FieldType": "Number",
+    "FieldMapping": "Payment.Amount"
+  }]
+}

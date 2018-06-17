@@ -25,6 +25,16 @@ const logger = winston.createLogger({
   ]
 });
 
+switch (process.env.NODE_LOG_LEVEL) {
+  case 'error': logger.level = 'error'; break;
+  case 'warn': logger.level = 'warn'; break;
+  case 'info': logger.level = 'info'; break;
+  case 'verbose': logger.level = 'verbose'; break;
+  case 'debug': logger.level = 'debug'; break;
+  case 'silly': logger.level = 'silly'; break;
+  default: /* Keep the configuration as defined in the logger creation statement */
+}
+
 //
 // If we're not in production then log to the `console` with the format:
 // `${info.level}: ${info.message} JSON.stringify({ ...rest }) `
