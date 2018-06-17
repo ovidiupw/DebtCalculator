@@ -21,6 +21,8 @@
     "test": "mocha -r ts-node/register tst/**/*.test.ts"
   },
   "dependencies": {
+    "reflect-metadata": "^0.1.12",
+    "typedi": "^0.7.3",
     "winston": "^3.0.0"
   }
 }
